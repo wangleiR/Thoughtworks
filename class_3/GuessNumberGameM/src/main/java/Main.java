@@ -28,7 +28,7 @@ public class Main {
             if (judgeNumber(userInputNumber)){
                 System.out.println("Cannot input duplicate numbers!");
             }else{
-                String cmp = compareNumber.CalculateAB(answer,userInputNumber);
+                String cmp = compareNumber.calculateAB(answer,userInputNumber);
                 if(cmp.equals("4A0B")){
                     System.out.println("Congratulations!");
                     break;
@@ -52,9 +52,6 @@ public class Main {
      * @return
      */
     public static boolean judgeNumber(String inputNumber){
-        if(inputNumber.length() != 4){
-            return false;
-        }
         for (int i = 0; i < inputNumber.length()-1; i++) {
             for (int j = i+1; j < inputNumber.length(); j++) {
                 if(inputNumber.charAt(i) == inputNumber.charAt(j))

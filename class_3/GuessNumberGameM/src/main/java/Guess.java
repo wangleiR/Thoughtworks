@@ -12,6 +12,6 @@ public class Guess {
         AnswerGenerator answerGenerator = new AnswerGenerator();
         String answer = answerGenerator.generateNumber();
         CompareNumber compareNumber = new CompareNumber();
-        return compareNumber.CalculateAB(answer,userInputNumber);
+        return compareNumber.calculateAB(answer,userInputNumber);
     }
 }
